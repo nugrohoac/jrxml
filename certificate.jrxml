@@ -15,7 +15,7 @@
 			<image scaleImage="RetainShape" hAlign="Left" vAlign="Top">
 				<reportElement mode="Transparent" x="0" y="0" width="802" height="555" forecolor="#000000" backcolor="#FFFFFF" uuid="889c3715-45db-41a2-9c38-705c362d8c0a"/>
 				<graphicElement fill="Solid"/>
-				<imageExpression><![CDATA["/home/nugi/Downloads/jrxml/certificate.png"]]></imageExpression>
+				<imageExpression><![CDATA["certificate.png"]]></imageExpression>
 			</image>
 			<textField>
 				<reportElement x="281" y="198" width="253" height="48" uuid="2c5cb4a6-50bf-4789-9fe1-68f9f89d7cb3"/>
