@@ -4,7 +4,7 @@
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="233"/>
 	<field name="name" class="java.lang.String"/>
-	<field name="number" class="java.lang.String"/>
+	<field name="number" class="java.lang.Long"/>
 	<field name="training_name" class="java.lang.String"/>
 	<field name="date" class="java.lang.String"/>
 	<background>
