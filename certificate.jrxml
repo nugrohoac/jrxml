@@ -1,49 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="certificate" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="96a37bc1-8ca2-4bb6-aede-535a5459a314">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="certificate" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0701e464-43a8-43cb-b35d-9c0467517e39">
 	<property name="ireport.zoom" value="1.0"/>
-	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="233"/>
-	<field name="name" class="java.lang.String"/>
-	<field name="number" class="java.lang.Long"/>
-	<field name="training_name" class="java.lang.String"/>
-	<field name="date" class="java.lang.String"/>
+	<property name="ireport.x" value="148"/>
+	<property name="ireport.y" value="141"/>
+	<parameter name="name" class="java.lang.String"/>
+	<parameter name="number" class="java.lang.Long"/>
+	<parameter name="trainingName" class="java.lang.String"/>
+	<parameter name="date" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
 	<detail>
 		<band height="555" splitType="Stretch">
-			<image scaleImage="RetainShape" hAlign="Left" vAlign="Top">
-				<reportElement mode="Transparent" x="0" y="0" width="802" height="555" forecolor="#000000" backcolor="#FFFFFF" uuid="889c3715-45db-41a2-9c38-705c362d8c0a"/>
-				<graphicElement fill="Solid"/>
-				<imageExpression><![CDATA["certificate.png"]]></imageExpression>
+			<image>
+				<reportElement x="0" y="0" width="802" height="555" uuid="33a8e4fb-389e-48c1-a82e-f6c89214da4c"/>
+				<imageExpression><![CDATA["D:\\Git\\jrxml\\certificate.png"]]></imageExpression>
 			</image>
 			<textField>
-				<reportElement x="281" y="198" width="253" height="48" uuid="2c5cb4a6-50bf-4789-9fe1-68f9f89d7cb3"/>
-				<textElement textAlignment="Center">
-					<font fontName="Serif" size="36"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="281" y="256" width="253" height="44" uuid="d467bb9f-ad17-4a36-aec3-04c3d043674b"/>
+				<reportElement x="193" y="191" width="420" height="49" uuid="0470a183-ecb5-41cf-8d5f-5b8cb9bf777a"/>
 				<textElement textAlignment="Center">
 					<font size="36"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{number}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="267" y="329" width="284" height="34" uuid="9efec56c-6bac-46a0-9ab4-a8b0ee126af7"/>
+				<reportElement x="283" y="255" width="250" height="48" uuid="3d1eb00b-aba8-4fbc-b03c-c816d215b87b"/>
+				<textElement textAlignment="Center">
+					<font size="36"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="249" y="326" width="334" height="34" uuid="c977ac47-054d-48ca-9019-b83f8f54a745"/>
 				<textElement textAlignment="Center">
 					<font size="24"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{training_name}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{trainingName}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="305" y="384" width="207" height="22" uuid="818aacb1-5b2b-4ff1-9bbf-d2a1f275d57a"/>
+				<reportElement x="244" y="384" width="343" height="27" uuid="40d5a260-80d2-4627-b2cb-7d49abee2407"/>
 				<textElement textAlignment="Center">
-					<font size="18"/>
+					<font size="16"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{date}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
