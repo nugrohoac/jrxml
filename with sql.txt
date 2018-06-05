@@ -1,0 +1,13 @@
+;WITH sk AS (
+SELECT * FROM [dbo].[SkemaSertifikasi]
+),
+t4 AS (
+SELECT * FROM [dbo].[Content]
+),
+t5 AS (
+SELECT * FROM [dbo].[Asesmen]
+)
+SELECT sk.JudulSkema, sk.JenisSkema, COALESCE(t4.IsiContent, 'Ini Kosong lhooo') AS IsiContent
+FROM sk
+LEFT JOIN t4 ON
+sk.IDSkema = t4.IDSkema
